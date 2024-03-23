@@ -1,0 +1,10 @@
+function getName()
+    return "Auto Toggle"
+end
+function init_script()
+    player.send_message(".bind autotoggle h")
+end
+function on_disable()
+    module_manager.disable("scaffold")
+    module_manager.disable("Parkour")
+end
