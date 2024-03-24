@@ -1,0 +1,28 @@
+local rh= RHelper:new()
+
+local v_onlyvoid
+
+local c_isonclunth = false
+function getName()
+    return "Clunth"
+end
+function init_script()
+    v_onlyvoid = module_manager.register_boolean(getName(),"Only Void",true)
+    function on_pre_motion(pre)
+        if (v_onlyvoid:get_boolean() and player.is_in_void() or not v_onlyvoid:get_boolean()) and player.fall_distance() >= 0.3 and not c_isonclunth then
+            lprint("Clunth")
+            c_isonclunth = true
+            module_manager.enable("scaffold")
+        elseif c_isonclunth and player.on_ground() then
+            lprint("Clunth Successfully, Disable Scaffold")
+            c_isonclunth = false
+            module_manager.disable("scaffold")
+        end
+    end
+    function on_disable()
+        if c_isonclunth then
+            module_manager.disable("scaffold")
+            c_isonclunth = false
+        end
+    end
+end
