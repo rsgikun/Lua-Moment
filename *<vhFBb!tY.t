@@ -2,7 +2,7 @@
 klxq | User | NotVerify | Scaffold Helper.lua;Speed.lua;Critcals.lua
 abab_2033 | User | NotVerify | Scaffold Helper.lua;Speed.lua
 §aN§bi§cc§co§bl§ae§1OwO | §5NFA God | NotVerify | Scaffold Helper.lua;Ban Tracker.lua;Client Fixed.lua;Speed.lua;XinYueMoment.lua
-xDomiks | User | NotVerify | Air Jump.lua;Visuals.lua
+xDomiks | User | 000030837FC79ACE2B22119A0F570A1C02A563E91F8940602213912529 | Air Jump.lua;Visuals.lua
 OYOY | User | 00002FB1EBC1FAA17F0C6240C6A29983C5599454AEAD6420819303178 | Scaffold Helper.lua;Speed.lua;Visuals.lua
 Popo | User | 00002FC05C1ECDB676CDC12A4AF7C9D325B9991A21AFE12D3377939378 | Scaffold Helper.lua;Speed.lua;Visuals.lua
 gaybobo | G4y | NotVerify | Visuals.lua
