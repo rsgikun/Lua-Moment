@@ -1,1 +1,1 @@
-player.message("test")
+lprint("test")
