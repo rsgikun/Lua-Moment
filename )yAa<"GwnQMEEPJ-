@@ -1,10 +1,21 @@
+do 
+local rh = RHelper:new()
 function getName()
     return "Auto Toggle"
 end
 function init_script()
-    player.send_message(".bind autotoggle h")
-end
-function on_disable()
-    module_manager.disable("scaffold")
-    module_manager.disable("Parkour")
-end
+    function on_enable()
+        if not module_manager.get_state("scaffoldhelper") then
+            lprint("§cWarnning: Scaffold Helper Has Disable")
+            module_manager.disable(getName())
+        end
+    end
+    function on_disable()
+        module_manager.disable("scaffold")
+        module_manager.disable("Parkour")
+        if rh:getmodulevalue("scaffoldhelper","Mode") == "Heypixel Telly" then
+            rh:setmodulevalue("scaffold","sprint mode","GrimAC Semi","string")
+            rh:java_pressKey("SPACE",true)
+        end
+    end
+end end
